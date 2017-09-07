@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script src="js/ang.js"></script>
+	<script src="js/users.js"></script>
+</head>
+<body ng-app="mainApp">
+
+
+	<div ng-controller="mainController">
+
+
+	<p>{{ title }}</p>
+
+
+	<p>search : <input type="text" ng-model="username"></p>
+
+     	<table border="1" cellpadding="2">
+			<tr>
+				<td>Name</td>
+				<td>Age</td>
+				<td>Nationality</td>
+			</tr>                               
+			<tr ng-repeat="x in users | filter:username">
+				<td>{{x.name}}</td>
+				<td>{{x.idCode}}</td>
+				<td>{{x.nationality}}</td>
+			</tr>
+
+		</table>
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/submit.js"></script>
+</head>
+<body ng-app="myForm" ng-controller="myC">
+	<form ng-submit="submit()">
+		<input type="text" name="text" ng-model="text">
+		<input type="submit" name="submit" value="submit">
+		<pre>
+			arrayes = {{list}}
+		</pre>
+	</form>
+
+</body>
+</html>
